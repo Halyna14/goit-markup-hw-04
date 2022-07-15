@@ -401,3 +401,41 @@ img {
 .contacts-item:last-child {
   margin-bottom: 0;
 }
+ /* ДЗ 04 */
+ .overlay {
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-image: linear-gradient(to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), url("../img/img-hw04/Img.jpg");
+  background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ }
+
+  .item::before{
+    display: block;
+    content: "";
+    height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #F5F4FA;
+  border-radius: 4px; 
+  margin-bottom: 30px;
+  }
+  .item-antenna::before{
+    background-image: url("../img/icons/antenna\ 1.png");
+  }
+  .item-clock::before{
+    background-image: url( "../img/icons/clock\ 1.png");
+  }
+  .item-diagram::before{
+    background-image: url("../img/icons/diagram\ 1.png");
+  }
+  .item-astronaut::before{
+    background-image: url("../img/icons/astronaut\ 1.png");
+  }
+  
