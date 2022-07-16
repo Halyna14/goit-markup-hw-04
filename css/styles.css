@@ -270,6 +270,7 @@ body {
 }
 
 .team-text {
+  margin-bottom: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--phone-cl);
@@ -418,9 +419,10 @@ img {
   background-size: cover;
 }
 
-.item::before {
-  display: block;
-  content: "";
+.thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -429,15 +431,29 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.item-antenna::before {
-  background-image: url("../img/icons/antenna\ 1.png");
+
+/* Socials icons*/
+.icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.item-clock::before {
-  background-image: url("../img/icons/clock\ 1.png");
+.icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
-.item-diagram::before {
-  background-image: url("../img/icons/diagram\ 1.png");
+.socials-icon {
+  fill: #afb1b8;
 }
-.item-astronaut::before {
-  background-image: url("../img/icons/astronaut\ 1.png");
+.icons-link:hover {
+  background-color: #2196f3;
+}
+.icons-link:hover .socials-icon {
+  fill: #ffffff;
 }
