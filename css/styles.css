@@ -396,6 +396,20 @@ img {
 .footer-address {
   margin-bottom: 9px;
 }
+
+.footer-title {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
 .contacts-item {
   margin-bottom: 9px;
 }
@@ -434,11 +448,33 @@ img {
 
 /* Socials icons*/
 .icons-list {
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
+
+.footer-left .addres,
+.icons-list,
+.footer-content,
+.footer-left {
+  display: flex;
+}
+.footer-left .addres,
+.footer-left,
+.footer-right {
+  flex-direction: column;
+}
+
+.footer-left {
+  margin-right: 70px;
+}
+
+.footer-right {
+  display: inline-flex;
+  align-items: baseline;
+  padding-top: 12px;
+}
+
 .icons-link {
   display: flex;
   align-items: center;
