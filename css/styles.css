@@ -140,7 +140,9 @@ body {
 }
 
 .header-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -149,6 +151,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
+
 .header-link-current {
   color: var(--accent-txt-cl);
 }
@@ -396,20 +399,6 @@ img {
 .footer-address {
   margin-bottom: 9px;
 }
-
-.footer-title {
-  display: block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 20px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
 .contacts-item {
   margin-bottom: 9px;
 }
@@ -417,6 +406,9 @@ img {
   margin-bottom: 0;
 }
 /* ДЗ 04 */
+.header-icon {
+  fill: currentColor;
+}
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -448,33 +440,11 @@ img {
 
 /* Socials icons*/
 .icons-list {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-
-.footer-left .addres,
-.icons-list,
-.footer-content,
-.footer-left {
-  display: flex;
-}
-.footer-left .addres,
-.footer-left,
-.footer-right {
-  flex-direction: column;
-}
-
-.footer-left {
-  margin-right: 70px;
-}
-
-.footer-right {
-  display: inline-flex;
-  align-items: baseline;
-  padding-top: 12px;
-}
-
 .icons-link {
   display: flex;
   align-items: center;
@@ -484,12 +454,100 @@ img {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.socials-icon {
-  fill: #afb1b8;
+.networks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
+.networks:hover{
+background-color: #2196f3;
+}
+.networks:hover .socials-icon{
+  fill: #ffffff;
+}
+
 .icons-link:hover {
   background-color: #2196f3;
 }
 .icons-link:hover .socials-icon {
   fill: #ffffff;
 }
+
+
+
+
+.icons-list:hover {
+  background-color: #2196f3;
+}
+.icons-list:hover .socials-icon {
+  fill: #ffffff;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.clients-title{
+  margin-bottom: 50px;
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.clients{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+
+}
+.clients-section{
+  display: flex;
+}
+.clients-link{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: #2196f3;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: #2196f3;
+}
+/* Портфолио 04 */
