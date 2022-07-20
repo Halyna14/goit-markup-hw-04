@@ -502,10 +502,12 @@ img {
 .networks {
   fill: #ffffff;
 }
-.networks:hover {
+.networks:hover,
+.networks:focus {
   background-color: #2196f3;
 }
-.networks:hover .socials-icon {
+.networks:hover .socials-icon,
+.networks:focus .socials-icon {
   fill: #ffffff;
 }
 .icons-link {
@@ -514,31 +516,22 @@ img {
 .icons-link {
   background: #ffffff;
 }
-.icons-link:hover {
+.icons-link:hover,
+.icons-link:focus {
   background-color: #2196f3;
 }
-.icons-link:hover .socials-icon {
+.icons-link:hover .socials-icon,
+.icons-link:focus .socials-icon {
   fill: #ffffff;
 }
 
 .footer-list {
   display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #43444d;
   gap: 10px;
 }
 
 .footer-left {
-  display: flex;
-  flex-wrap: wrap;
-  width: 231px;
   margin-right: 70px;
-}
-.footer-right {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-title {
@@ -552,8 +545,6 @@ img {
 }
 .footer-content {
   display: flex;
-  align-items: center;
-  justify-content: normal;
   align-items: baseline;
 }
 .clients-title {
